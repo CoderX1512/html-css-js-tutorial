@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Examples of CSS media types</title>
+        <style>
+            @media screen {
+                body {
+                    color:red;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 14px;
+                }               
+            }
+            @media print {
+                body {
+                    color:cornflowerblue;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 120pt;
+                }
+            }
+            @media screen, print{
+                body {
+                    line-height: 1.2;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS media types</h1>
+        <p><strong>Note:</strong>If you print (or print preview) this page the output of the HTML code appears differently than it appears on the screen. </p>
+    </body>
+</html>

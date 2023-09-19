@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-Inspired UI</title>
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add custom styles here */
+        /* Example: body { background-color: #000; color: #fff; } */
+    </style>
+</head>
+<body>
+    
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            
+        <a class="navbar-brand" href="#">
+            <img src="data:image/jpeg;base64,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"
+             width="100" height="50" alt="">
+          </a>     
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">TV Shows <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Movies<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Latest <span class="sr-only">(current)</span></a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Genres
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+           
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Netflix</a>
+        <!-- You can add a search bar and other navigation links here -->
+    </nav>
+
+    <!-- Hero Section (Similar to Netflix banner) -->
+    <header class="hero bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Watch Unlimited Movies & TV Shows</h1>
+            <p class="lead">Stream your favorites anytime, anywhere.</p>
+            <!-- You can add a "Sign In" button here -->
+        </div>
+    </header>
+
+    <!-- Movie/Show Thumbnails (Sample content) -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="placeholder-image.jpg" class="card-img-top" alt="Movie Title">
+                    <div class="card-body">
+                        <h5 class="card-title">Movie Title</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the above card structure for multiple movies/shows -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2023 Netflix. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add Bootstrap JS and jQuery scripts at the end of the body tag -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<script>
+    function mathCalc(){
+     var a= +document.getElementById("a").value; // var a = Number(document.getElementById("a").value);
+     var b= +document.getElementById("b").value;
+     if (!isNaN(a) && !isNaN(b)){
+         // document.write(a+b)
+         document.getElementById("result").innerHTML = a+b;
+     }
+     else{
+         document.write("Enter numbers")
+     }
+    }
+ </script>
+
+Enter A:<input id="a" type="text" name="txt1"><br>
+Enter B:<input id="b" type="text" name="txt2"><br>
+
+<button type="button" onclick="mathCalc()">Sum Here</button>
+
+<p id="result"></p>

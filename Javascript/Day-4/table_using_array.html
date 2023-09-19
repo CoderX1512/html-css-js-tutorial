@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Table</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTableBody">
+            <!-- Table body content will be added dynamically -->
+        </tbody>
+    </table>
+
+    <script>
+        // Array of employees
+        const employees = [
+            { name: 'John Doe', address: '123 Main St', phoneNumber: '555-123-4567' },
+            { name: 'Jane Smith', address: '456 Elm St', phoneNumber: '555-987-6543' },
+            { name: 'Bob Johnson', address: '789 Oak St', phoneNumber: '555-456-7890' }
+            // Add more employees as needed
+        ];
+
+        // Function to populate the table with employee data
+        function populateTable() {
+            const tableBody = document.getElementById('employeeTableBody');
+
+            employees.forEach(employee => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${employee.name}</td>
+                    <td>${employee.address}</td>
+                    <td>${employee.phoneNumber}</td>
+                `;
+
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Call the function to populate the table
+        populateTable();
+    </script>
+</body>
+</html>

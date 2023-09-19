@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+}
+
+.red-box {
+  position: relative;
+  background: red;
+  z-index: 1;
+  border: 0px solid black;
+  height: 100px;
+  width: 100px;
+  margin: 30px;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 2; 
+  background: rgb(28, 223, 28);
+  opacity: 0.8;
+  height: 100px;  
+  width: 100px;
+  left: 50px;
+  top: 20px;
+}
+
+.blue-box {
+  position: absolute;
+  z-index: 3; 
+  background: blue;
+  opacity: 0.8;
+  width: 100px;
+  height: 100px;
+  left: 70px;
+  top: 40px;
+  
+}
+</style>
+</head>
+<body>
+
+<h1>Z-index Example</h1>
+
+<p>An element with greater stack order is always above an element with a lower stack order.</p>
+
+<div class="container">
+  <div class="red-box"></div>
+  <div class="green-box"></div>
+  <div class="blue-box"></div>
+</div>
+
+</body>
+</html>

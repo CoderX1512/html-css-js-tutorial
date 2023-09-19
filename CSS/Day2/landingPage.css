@@ -1,0 +1,127 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    /* Global styles */
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+    }
+    
+    /* Header styles */
+    header {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff; /* Set text color to white */
+    }
+    
+    header h1 {
+    font-size: 36px;
+    color: blue;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
+    }
+    
+    header p {
+    font-size: 18px;
+    color: green;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
+    }
+    
+    
+    /* Navigation styles */
+    nav ul {
+    list-style: none;
+    }
+    
+    nav li {
+    display: inline;
+    margin-right: 20px;
+    }
+    
+    nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    }
+    
+    /* Call-to-Action button styles */
+    .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    }
+    
+    .cta-button:hover {
+    background-color: #555;
+    }
+    
+    /* Section styles */
+    section {
+    padding: 40px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    }
+    
+    section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    }
+    
+    /* Feature styles */
+    .feature {
+    margin-bottom: 30px;
+    }
+    
+    /* Pricing plan styles */
+    .pricing-plan {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .pricing-plan h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    
+    .pricing-plan p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    }
+    
+    .pricing-plan ul {
+    list-style: none;
+    padding: 0;
+    }
+    
+    .pricing-plan li {
+    margin-bottom: 10px;
+    }
+    
+    /* Footer styles */
+    footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    }
